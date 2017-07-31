@@ -662,6 +662,11 @@ public class StepperLayout extends LinearLayout implements TabsContainer.TabItem
         mStepperFeedbackType = StepperFeedbackTypeFactory.createType(mFeedbackTypeMask, this);
     }
 
+    public void setmBottomNavigationBackground(int color){
+        if (mBottomNavigationBackground != 0) {
+            mStepNavigation.setBackgroundResource(color);
+        }
+    }
     private void initNavigation() {
         if (mBottomNavigationBackground != 0) {
             mStepNavigation.setBackgroundResource(mBottomNavigationBackground);
