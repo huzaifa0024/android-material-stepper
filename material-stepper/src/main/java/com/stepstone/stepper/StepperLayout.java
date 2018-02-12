@@ -357,8 +357,16 @@ public class StepperLayout extends LinearLayout implements TabsContainer.TabItem
         return mSelectedColor;
     }
 
+    public void setSelectedColor(int selectedcolor){
+        this.mSelectedColor = selectedcolor;
+    }
+
     public int getUnselectedColor() {
         return mUnselectedColor;
+    }
+
+    public void setUnSelectedColor(int unselectedcolor){
+        this.mUnselectedColor = unselectedcolor;
     }
 
     public int getErrorColor() {
